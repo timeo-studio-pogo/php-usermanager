@@ -27,9 +27,9 @@ CREATE TABLE IF NOT EXISTS `roles` (
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Listage des données de la table user_manager.roles : ~2 rows (environ)
-INSERT INTO `roles` (`id`, `nom`) VALUES
-	(1, 'admin'),
-	(2, 'user');
+INSERT INTO `roles` (`nom`) VALUES
+	('admin'),
+	('user');
 
 -- Listage de la structure de table user_manager. users
 CREATE TABLE IF NOT EXISTS `users` (
@@ -44,10 +44,10 @@ CREATE TABLE IF NOT EXISTS `users` (
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Listage des données de la table user_manager.users : ~2 rows (environ)
-INSERT INTO `users` (`id`, `nom`, `mdp`, `email`, `roleId`) VALUES
-	(1, 'test', 'test', 'test@mail;com', 2),
-	(2, 'Timéo', 'JANOD', 'janodtimeo@gmail.com', 1),
-	(3, 'Alexis', 'MULLER', 'muller.a@gmail.com', 2);
+INSERT INTO `users` (`nom`, `mdp`, `email`, `roleId`) VALUES
+	('test', 'test', 'test@mail;com', 2),
+	('Timéo', 'JANOD', 'janodtimeo@gmail.com', 1),
+	('Alexis', 'MULLER', 'muller.a@gmail.com', 2);
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
